@@ -1,0 +1,9 @@
+---
+applications:
+- name: henry-cf-demo
+  memory: 1024M
+  health-check-type: port
+  health-check-http-endpoint: /
+  stack: cflinuxfs3
+  routes:
+  - route: henry-cf-demo.cfapps.io
